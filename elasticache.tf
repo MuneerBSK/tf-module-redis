@@ -13,7 +13,7 @@ resource "aws_elasticache_cluster" "redis" {
 # Creates Parameter group
 resource "aws_elasticache_parameter_group" "default" {
   name                 = "robot-${var.ENV}-redis-pg"
-  family               = "redis6.x"
+  family               = "redis6.2"
 }
 
 # Creates Subnet Group.
